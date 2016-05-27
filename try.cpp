@@ -70,7 +70,6 @@ public:
         node *rec=new node;
         cout<<"this node will be added at first\nenter values for this one \n";
         cin>>rec->regno>>rec->name;
-        //cout<<rec->name<<"\t"<<rec->regno<<endl;
         rec->bck=NULL;
         rec->frnt=first;
         first->bck=rec;
