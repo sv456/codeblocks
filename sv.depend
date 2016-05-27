@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1464081207 source:c:\users\i326017\downloads\sv\try.cpp
+	<iostream>
+
+1464084729 source:c:\users\i326017\downloads\sv\snake.cpp
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	<process.h>
+
