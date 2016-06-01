@@ -14,7 +14,7 @@ class school
 {
     node *first,*last;//to point the first and last node
 public:
-    school()//constructor
+    school()
     {
         first=NULL;
         last=NULL;
