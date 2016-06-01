@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 static int cnt=0;
+//for node creation
 class node
 {
 public:
@@ -8,11 +9,12 @@ public:
     char name[20];
     node *frnt,*bck;
 };
+//creating school class to add information about each student
 class school
 {
-    node *first,*last;
+    node *first,*last;//to point the first and last node
 public:
-    school()
+    school()//constructor
     {
         first=NULL;
         last=NULL;
@@ -22,7 +24,7 @@ public:
         delete first;
         delete last;
     }
-    void add_node()
+    void add_node()//to add a node
     {
         node *record=new node;
         cout<<"enter reg no and and name"<<endl;
@@ -42,7 +44,7 @@ public:
         }
 
     }
-    void display()
+    void display()//to display the nodes in linked list
     {
         node *tmp;
         tmp=first;
@@ -65,7 +67,7 @@ public:
                 break;
         }
     }
-    void add_first()
+    void add_first()//to add a node at the beginning of the linked list
     {
         node *rec=new node;
         cout<<"this node will be added at first\nenter values for this one \n";
@@ -76,7 +78,7 @@ public:
         first=rec;
 
     }
-    void add_anywhere()
+    void add_anywhere()//to add node at the nth place
     {
         node *tmp=first;
         int n;
@@ -109,7 +111,7 @@ public:
         rec->bck=tmp;
         }
     }
-    void delete_anynode()
+    void delete_anynode()//deleting the node based on the information that is entered
     {
         int j;
         node *tmp;
@@ -129,7 +131,7 @@ public:
             }
         }
     }
-    void cnt_node()
+    void cnt_node()//to count the number of nodes in linked list
     {
         node *t=first;
         while(t!=NULL)
