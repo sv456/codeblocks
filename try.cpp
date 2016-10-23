@@ -7,6 +7,7 @@ class node
 public:
     int regno;
     char name[20];
+
     node *frnt,*bck;
 };
 //creating school class to add information about each student
